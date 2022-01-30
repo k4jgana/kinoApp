@@ -1,0 +1,32 @@
+{
+  "name": "bazi-kino",
+  "version": "1.0.0",
+  "description": "Cinema app mkd",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4jgana/kinoApp.git"
+  },
+  "author": "Nenad Kajgana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k4jgana/kinoApp/issues"
+  },
+  "homepage": "https://github.com/k4jgana/kinoApp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.12.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

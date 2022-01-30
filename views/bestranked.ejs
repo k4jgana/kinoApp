@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            font-size: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Best Ranked movies by week of month</h1>
+    <br>
+    <% br.forEach(br => { %>
+        <li>  
+            <h2><%= br.rank%>.<%= br.name%> <span>week: <%= br.week_of %> 
+            of month: <%= br.month %></span></h2>
+            <form action="projections/search" class="search-form">
+                <button type="submit"
+                name="movie_name"  
+                value="<%= br.name %>">vidi proekcii</button>
+            </form>
+        </li>                              
+    <% }) %>
+</body>
+</html>

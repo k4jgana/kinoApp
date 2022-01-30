@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Buying ticket for <%= movie_name %></h3>
+    <form action="/ticketmechanism/buy" method="POST">
+        <label for="name">First Name: </label>
+        <input type="text" name="name" id="name">
+        <label for="surname">Last Name: </label>
+        <input type="text" name="surname" id="surname">
+        <label for="movie_name"></label>
+        <input type="hidden" name="movie_name" id="movie_name" 
+        value="<%= movie_name %>">
+        
+        <br>
+        <div>
+        <button type="submit">
+            Buy Ticket
+        </button>
+    </div>
+    </form>
+
+    <p>Each buying of a ticket you get 1 point, If you have 10 points the next ticket will be free, otherwise ticket price for every movie is 200</p>
+</body>
+</html>
